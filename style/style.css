@@ -1,0 +1,775 @@
+:root{
+    --bgc: #F0F0F6;
+    --bgc2: #FFF;
+    --black: #2B2B2B;
+    --text: #767676;
+    --yellow: #FFB400;
+    --available: #7EB942;
+    --hover: #e4a102;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    padding: 0;
+    margin: 0;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+a{
+    color: unset;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ol, ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    height: auto;
+}
+
+.btn {
+    background: var(--bgc2);
+    color: var(--text);
+    border: 1px solid transparent;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    display: inline-flex;
+}
+.btn-lg {
+    padding: 1.5rem 3rem;
+}
+.btn-primary {
+    background: var(--yellow);
+    color: var(--black);
+}
+.btn-primary:hover {
+    background: var(--hover);
+}
+.rounded-sm {
+    border-radius: 5px;
+}
+.rounded-full {
+    border-radius: 10rem;
+}
+.d-flex{
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-between{
+    justify-content: space-between;
+}
+.flex-column{
+    flex-direction: column;
+}
+
+.ps-relative{
+    position: relative;
+}
+.ps-absolute{
+    position: absolute;
+}
+
+.mt-7{
+    margin-top: 7rem;
+}
+.mb-5{
+    margin-bottom: 5rem;
+}
+
+.m-center{
+    margin: 0 auto;
+}
+
+.font-title{
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+
+.font-text{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.4rem;
+    text-transform: capitalize;
+}
+
+.style-text-main{
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 4rem;
+    text-transform: capitalize;
+}
+
+
+.text-center{
+    text-align: center;
+}
+
+.line-spacing{
+    height: .15rem;
+    width: 100%;
+    margin: 2.5rem 0;
+    background-color: var(--bgc);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    background-color: var(--bgc);
+}
+
+.container{
+    max-width: 144rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column-gap: 3rem;
+}
+
+@media (min-width: 768px){
+    .container{
+        grid-template-columns: 30.5rem auto 10.8rem;
+    }
+}
+
+
+/* ============================================================= */
+/* ========================= SECTION HEADING ========================= */
+
+.section--heading{
+    text-align: center;
+    width: 44rem;
+    margin: 7rem auto 5rem;
+}
+.section--heading__desc{
+    margin-top: 2.5rem;
+    color: var(--text);
+}
+
+
+
+/* ============================================================================== */
+/* ============================================================================== */
+/* ============================================================================== */
+/* ========================= LEFT MENU ========================= */
+.left-menu--content{
+    flex-direction: column;
+    padding: 5rem 4.5rem 2.5rem 4rem;
+    background-color: var(--bgc2);
+}
+
+
+/* ============================================================= */
+/* ========================= PROFILE ========================= */
+.profile__img{
+    margin: 0 auto;
+}
+.profile__name{
+    margin-top: 3rem;
+}
+
+.profile__job{
+    margin: 1.5rem 0;
+}
+
+.profile--icon{
+    width: 100%;
+    column-gap: 1.5rem;
+}
+
+.profile--icon__items{
+    justify-content: center;
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    background-color: var(--yellow);
+}
+
+
+
+/* ============================================================= */
+/* ========================= ABOUT ========================= */
+.about{
+    width: 100%;
+}
+.about--items{
+    margin-bottom: .7rem;
+}
+.about--items__title{
+    padding: .1rem .7rem .1rem .5rem;
+    background-color: var(--yellow);
+}
+
+
+/* ============================================================= */
+/* ========================= LANGUAGE ========================= */
+
+.languages{
+    width: 100%;
+}
+.language__list,
+.skill__list{
+    margin-top: 1.5rem;
+    color: var(--text);
+}
+.language__items,
+.skill__items{
+    margin-bottom: .7rem;
+}
+.language--range,
+.skill--range{
+    margin-top: .5rem;
+    width: 100%;
+    padding: .1rem;border-radius: 1rem;
+    border: .1rem solid var(--yellow);
+}
+.language--range--inside,
+.skill--range--inside{
+    height: .2rem;
+    border-radius: 1rem;
+    background-color: var(--yellow);
+}
+
+.skill{
+    width: 100%;
+
+}
+
+
+
+/* ============================================================= */
+/* ========================= EXTRA SKILL ========================= */
+.extra-skill{
+    width: 100%;
+}
+.ex-skill__list{
+    margin-top: 1.5rem;
+}
+
+
+.ex-skill__items{
+    margin-bottom: .5rem;
+    color: var(--text);
+}
+.ex-skill__name{
+    margin-left: 1.2rem;
+}
+
+
+.btn-downloadCV__link{
+    padding: 1rem 4rem;
+    background-color: var(--yellow);
+}
+.text-download{
+    margin-right: 1.9rem;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    text-wrap: nowrap;
+}
+
+
+/* ============================================================================== */
+/* ============================================================================== */
+/* ============================================================================== */
+/* ========================= MAIN MENU ========================= */
+
+
+/* ============================================================= */
+/* ========================= HERO ========================= */
+.hero{
+    background-color: var(--bgc2);
+}
+.hero--row{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    padding: 0 5.76rem 0 6rem;
+}
+.hero__heading{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.6%;
+    color: var(--black);
+    margin-top: 1rem;
+}
+.hero__heading__diffcolor{
+    color: var(--yellow);
+}
+.hero__desc{
+    font-size: 1.6rem;
+    color: var(--text);
+    width: 42.4rem;
+    margin: 1.8rem 0 2.5rem 0;
+}
+.hero__link{
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.hero__link__text{
+    margin-right: 1rem;
+}
+
+.hero__img{
+    margin-top: .8rem;
+    height: fit-content;
+    width: 32.57rem;
+}
+
+@media (min-width: 768px){
+    .hero--row{
+        grid-template-columns: auto auto;
+    }
+}
+
+
+/* ============================================================= */
+/* ========================= SERVICE ========================= */
+.service{
+    margin-top: 13.8rem;
+}
+.section--heading__title{
+    padding-right: 1rem;
+}
+
+.service-row{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.service--items{
+    background-color: var(--bgc2);
+}
+.service--items__svg{
+    display: flex;
+    justify-content: center;
+    margin-top: 2.8rem;
+}
+.service--items__name{
+    margin-top: 2.6rem;
+}
+.service--items__category{
+    margin-top: 1.5rem;
+    color: var(--text);
+    margin-bottom: 4.2rem;
+}
+
+.service--items__advert{
+    padding: 0 2.5rem;
+}
+
+.service--items__category__orderNow{
+    font-size: 12px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 2.5rem;
+    color: var(--yellow);
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+/* ============================================================= */
+/* ========================= PRICING ========================= */
+.pricing--row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2.1rem;
+}
+.pricing--items{
+    background-color: var(--bgc2);
+    padding: 5.4rem 3.1rem 2.5rem 3.1rem;
+}
+
+.pricing--heading__level{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 123.6%;
+    text-transform: capitalize;
+}
+.pricing--heading--price{
+    margin-top: 1.9rem;
+}
+.pricing__cost{
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 123.6%
+}
+.pricing--heading__desc{
+    color: var(--text);
+    margin-top: .8rem;
+    margin-bottom: 2.1rem; 
+}
+.pricing--list__service{
+    color: var(--text);
+    margin-bottom: 1.7rem;
+}
+
+.pricing--list__feature{
+    margin-left: 1.5rem;
+}
+.pricing__active{
+    color: var(--black);
+}
+.pricing--popular{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: .3rem 0;
+    background-color: var(--yellow);
+}
+.pricing--footer{
+    justify-content: center;
+    margin-top: .4rem;
+}
+.btn__link{
+    color: var(--black);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: capitalize;
+    padding: 1rem 4.1rem;
+    margin: 0 auto;
+    box-shadow: .1rem .1rem 1rem var(--bgc);
+}
+
+
+
+/* ============================================================= */
+/* ========================= RECOMMENT ========================= */
+.recomment--row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.recomment--items{
+    padding: 2.5rem;
+    background-color: var(--bgc2);
+}
+
+.star-wrapper{
+    column-gap: 1rem;
+}
+.recomment__quality{
+    margin: 1rem 0 1.8rem 0;
+}
+.recomment__desc{
+    color:  var(--text);
+}
+.recomment--author{
+    margin-top: 2.5rem;
+}
+.recomment--authore__image-james{
+    margin-right: 1.4rem;
+}
+.recomment--authore__image-tiana{
+    margin-right: 2.7rem;
+}
+.recomment--authore__image-talan{
+    margin-right: 2.5rem;
+}
+
+.recomment--authore__image{
+    margin-right: 2rem;
+}
+.recomment--author__job{
+    margin-top: .5rem;
+    color: var(--text);
+}
+.section--footer{
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+
+/* ============================================================= */
+/* ========================= EDUACTION AND HISTORY_WORK ========================= */
+
+.sc--row{
+    padding: 1.9rem 2.9rem 4.2rem 3.7rem;
+    background-color: var(--bgc2);
+}
+
+.sc__name{
+    margin-top: 3.2rem;
+}
+.sc--meta{
+    margin-top: 2.5rem;
+}
+
+.sc--meta__time{
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100.9%;
+    padding: .4rem .7rem;
+    margin-left: 2rem;
+    color: var(--bgc2);
+    background-color: var(--yellow);
+}
+
+.sc--col--certificate{
+    width: 53.6rem;
+    display: block;
+}
+
+.sc__certificate{
+    margin-top: 2.8rem;
+}
+
+.sc__desc{
+    color: var(--text);
+    margin-top: 2.8rem;
+}
+
+
+.line-spacing-2{
+    height: .15rem;
+    width: 100%;
+    background-color: var(--bgc);
+}
+
+
+
+
+
+/* ============================================================= */
+/* ========================= PORTFOLIO ========================= */
+
+.tab{
+    justify-content: center;
+    column-gap: 3.7rem;
+}
+.portfolio--items:hover .portfolio--detail--wrapper{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portfolio--content{
+    margin-top: 5rem;
+}
+.portfolio__row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.portfolio--detail--wrapper{
+    top: 0;
+    left: 0;
+    z-index: 99;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    background: rgba(255, 180, 0, 0.95);
+    opacity: 0;
+    visibility: hidden;
+    transition: all ease .2s;
+}
+
+
+
+
+/* ============================================================= */
+/* ========================= POST ========================= */
+.post--row{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.post--col{
+    background-color: var(--bgc2);
+}
+.post--items__name{
+    margin-top: 2.5rem;
+    margin-left: 2.5rem;
+}
+.post--items__desc{
+    margin: .8rem 1.7rem .8rem 2.5rem;
+}
+.post__learnMore{
+    margin-left: 2.5rem;
+    margin-bottom: 1.8rem;
+}
+
+/* ============================================================= */
+/* ========================= CONTACT ========================= */
+
+.contact--row{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+}
+
+.section--heading--contact{
+    width: auto;
+}
+.section--heading__title__left{
+    text-align: start;
+}
+
+.your--infor{
+    width: 57rem;
+}
+
+.contact--form-body{
+    padding: 2.5rem;
+    background-color: var(--bgc2);
+}
+.form-group{
+    margin-bottom: 2.5rem;
+}
+
+.form__lable{
+    display: block;
+    color: var(--text);
+    margin-bottom: .8rem;
+}
+
+.form__input{
+    width: calc(100% - 2rem);
+    height: 5rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    padding: 0 1rem;
+    background-color: var(--bgc);
+}
+.form__textarea{
+    width: calc(100% - 2rem);
+    height: 19.8rem;
+    border: none;
+    outline: none;
+    padding: 1rem;
+    background-color: var(--bgc);
+}
+
+.form__btn{
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.contact--infor--items{
+    margin-bottom: 1.8rem;
+    padding: 2.5rem 2.5rem 0rem 2.5rem;
+    background-color: var(--bgc2);
+}
+
+.contact--infor--icon{
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    background-color: var(--yellow);
+}
+.contact--infor__table{
+    margin-top: 1.4rem;
+    color: var(--text);
+    width: 100%;
+    border-spacing: 0 1.5rem;
+}
+.fl-left{
+    float: right;
+}
+
+
+
+/* ============================================================= */
+/* ========================= MAP ========================= */
+.map{
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+}
+
+
+
+.copyright{
+    margin-top: 7rem;
+    padding: 1.8rem;
+    text-align: center;
+    background-color: var(--bgc2);
+}
+
+
+
+/* ============================================================================== */
+/* ============================================================================== */
+/* ============================================================================== */
+/* ========================= RIGHT MENU ========================= */
+.right-menu--content{
+    background-color: var(--bgc2);
+    flex-direction: column;
+    padding-bottom: 52rem;
+}
+.theme-mode{
+    margin-top: 5rem;
+    line-height: normal;
+}
+
+.nav-menu{
+    margin-top: 21.2rem;
+}
+
+.nav__items{
+    height: 4rem;
+    width: 4rem;
+    margin-bottom: 4.3rem;
+    border-radius: 50%;
+    background-color: var(--bgc);
+}
+.nav__items__icon{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.nav__items__active{
+    background-color: var(--yellow);
+}
+
+
+
+
+.mt-0{
+    margin-bottom: 0;
+}
